@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sebastian.cv</title>
+
+  <link rel="icon" href="data/profile.JPG" type="image/jpeg">
+  <link rel="shortcut icon" href="data/profile.JPG">
+  <link rel="apple-touch-icon" href="data/profile.JPG">
+
+  <script>
+    (function(){
+      try {
+        const url = 'data/profile.JPG?v=' + Date.now();
+        let el = document.querySelector('link[rel~="icon"]');
+        if (!el) { el = document.createElement('link'); el.rel = 'icon'; document.head.appendChild(el); }
+        el.href = url;
+      } catch(e){}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <nav class="lang-controls" aria-label="Idioma">
+      <button id="btn-en" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      <button id="btn-es" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      <a id="openBtn" class="open-btn" href="#" target="_blank" rel="noopener">Abrir PDF</a>
+      <a id="downloadBtn" class="download-btn" href="#" download>Descargar</a>
+    </nav>
+  </header>
+
+  <main class="viewer" role="main">
+    <article id="content" class="content" aria-live="polite">
+    </article>
+
+    <template id="template-en">
+      <div class="container">
+
+        <header class="hero">
+          <h1>Sebastian Zapata</h1>
+          <h2 class="hero-subtitle">Experienced DevOps</h2>
+        </header>
+
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/im-sebastian-zapata" target="_blank">I'm Sebastian Zapata</a></p>
+        <p>Critical thinking, decision-making and problem-solving skills, experience and special skills in AWS.</p>
+
+        <section>
+          <h2>Areas of Knowledge</h2>
+          <ul>
+            <li>Working with AWS since 2020 and several of their most important services.</li>
+            <li>Managing Kubernetes in Production since 2022.</li>
+            <li>Experienced and skilled in Azure DevOps. (Also with GitHub Actions and Jenkins)</li>
+            <li>Infrastructure as code with Terraform and CloudFormation.</li>
+            <li>Good technical background managing microservices written in modern languages (java, python).</li>
+            <li>Good knowledge of new technologies in general.</li>
+            <li>Evangelist of good practices across the organization.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Professional Experience</h2>
+          <h3><a href="https://epamneoris.com/" target="_blank">Neoris</a> – Experienced DevOps
+            <span class="xp-dates">(June 2024 – Present)</span>
+          </h3>
+          <h4>Part of the first cloud-to-cloud migration in Latin America from Red Hat OpenShift Container Platform (OCP) to AWS Outposts, migrating development, QA, and production environments with a focus on scalability and high availability.</h4>
+          <ul>
+            <li>AWS, Kubernetes and Azure DevOps</li>
+            <li>Migrated over 4,000 Kubernetes pods, 1,000+ EC2 instances, in 6 EKS clusters</li>
+            <li>Successfully migrated 240+ microservices to production</li>
+            <li>Member of the DevOps team responsible for the cloud-to-cloud migration.</li>
+          </ul>
+
+          <h3><a href="https://linktic.com/" target="_blank">Linktic</a> – DevOps Junior
+            <span class="xp-dates">(April 2023 – June 2024)</span>
+          </h3>
+          <h4>Worked closely with developers to create services and bring them to production in the shortest possible time.</h4>
+          <ul>
+            <li>Played a key role in implementing the company’s first Kubernetes-based project, utilizing DevOps best practices (branch/version control, code analysis, containerization, and EKS deployment)</li>
+            <li>Developed infrastructure code using Terraform and CloudFormation for AWS projects</li>
+            <li>Created automation scripts for processes involving Kubernetes and microservices in ECS (Fargate/EC2).</li>
+          </ul>
+
+          <h3><a href="https://www.grupomatrix.co/quienes.html" target="_blank">Matrixtech</a> – AWS Cloud Engineer
+            <span class="xp-dates">(June 2021 – April 2023)</span>
+          </h3>
+          <h4>Contributed to seven projects, designing architecture for new initiatives, implementing Infrastructure as Code (IaC) with CDK, Terraform, and CloudFormation, and driving the integration of new technologies while ensuring compliance with security best practices. Additionally, leveraged extensive knowledge of AWS networking to support project requirements.</h4>
+          <ul>
+            <li>Managed company accounts across multiple regions</li>
+            <li>Provided incident resolution in the SysOps role within AWS</li>
+            <li>Administered and supported a wide range of AWS services.</li>
+          </ul>
+
+          <h3><a href="https://www.softwareone.com/es-es/prensa/2020/11/10/softwareone-adquirio-de-intergrupo" target="_blank">Intergrupo</a> – Operations Analyst / Azure Cloud L1
+            <span class="xp-dates">(Oct 2018 – Jun 2021)</span>
+          </h3>
+          <h4>Monitored and implemented services in Azure, including server monitoring on platforms such as PRTG, SolarWinds, and Azure, mass storage capacity monitoring in RAID, backup reviews, and incident management.</h4>
+
+          <h3><a href="https://www.teleperformance.com/en-us/" target="_blank">Teleperformance</a> – Level 1 Support
+            <span class="xp-dates">(Jan 2018 – Oct 2018)</span>
+          </h3>
+          <h4>Provided technical support in IP telephony, television, and fiber optics for Orange Spain.</h4>
+
+          <h3><a href="https://www.celerix.com/" target="_blank">Celerix</a> – Support Analyst
+            <span class="xp-dates">(Apr 2017 – Oct 2017)</span>
+          </h3>
+          <h4>Participated in technological projects involving network design and the setup of commercial premises, managed user accounts in Active Directory, and provided support for users' IT tools, including workstations, computer installations, and preventive maintenance.</h4>
+        </section>
+
+        <section>
+          <h2>Languages</h2>
+          <p>Spanish (native), English (intermediate)</p>
+        </section>
+      </div>
+    </template>
+
+    <template id="template-es">
+      <div class="container">
+
+        <header class="hero">
+          <h1>Sebastian Zapata</h1>
+          <h2 class="hero-subtitle">Experienced DevOps</h2>
+        </header>
+
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/im-sebastian-zapata" target="_blank">Soy Sebastian Zapata</a></p>
+        <p>Pensamiento crítico, toma de decisiones y resolución de problemas, con experiencia y conocimientos especializados en AWS.</p>
+
+        <section>
+          <h2>Áreas de conocimiento</h2>
+          <ul>
+            <li>Trabajo en la nube de AWS desde 2020, con varios de sus servicios más importantes.</li>
+            <li>Gestiono Kubernetes y contenedores Docker en producción desde 2022.</li>
+            <li>Trabajo con Azure DevOps desde 2023. (También he trabajado con GitHub Actions y Jenkins)</li>
+            <li>Infraestructura como código con Terraform y CloudFormation.</li>
+            <li>Experiencia en la gestión de microservicios escritos en lenguajes modernos. (java, python)</li>
+            <li>Buen conocimiento de nuevas tecnologías en general.</li>
+            <li>Promotor de buenas prácticas a lo largo de la organización.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Experiencia profesional</h2>
+          <h3><a href="https://epamneoris.com/" target="_blank">Neoris</a> – Experienced DevOps
+            <span class="xp-dates">(Junio 2024 – Actualmente)</span>
+          </h3>
+          <h4>Parte de la primera migración de nube a nube en América Latina, desde Red Hat OpenShift Container Platform (OCP) a AWS Outposts, migrando los entornos de desarrollo, QA y producción con un enfoque en escalabilidad y alta disponibilidad.</h4>
+          <ul>
+            <li>AWS, Kubernetes y Azure DevOps</li>
+            <li>Migración de más de 4,000 pods de Kubernetes, más de 1,000 instancias EC2, en 6 clústeres EKS</li>
+            <li>Migración exitosa de más de 240 microservicios a producción</li>
+            <li>Miembro del equipo DevOps responsable de la migración.</li>
+          </ul>
+
+          <h3><a href="https://linktic.com/" target="_blank">Linktic</a> – DevOps Junior
+            <span class="xp-dates">(Abril 2023 – Junio 2024)</span>
+          </h3>
+          <h4>Trabajé estrechamente con los desarrolladores (desde el rol DevOps) para crear servicios y llevarlos a producción en el menor tiempo posible.</h4>
+          <ul>
+            <li>Cumplí un papel clave en la implementación del primer proyecto basado en Kubernetes de la compañía, utilizando las mejores prácticas de DevOps (control de ramas, control de versiones, análisis de código, contenerización y despliegue en EKS)</li>
+            <li>Escribí código de infraestructura utilizando Terraform y CloudFormation para proyectos en AWS</li>
+            <li>Creé scripts de automatización para procesos relacionados con Kubernetes y microservicios en ECS (Fargate/EC2).</li>
+          </ul>
+
+          <h3><a href="https://www.grupomatrix.co/quienes.html" target="_blank">Matrixtech</a> – AWS Cloud Engineer
+            <span class="xp-dates">(Junio 2021 – Abril 2023)</span>
+          </h3>
+          <h4>Contribuí en siete proyectos, diseñando la arquitectura para nuevas iniciativas, implementando Infraestructura como Código (IaC) con CDK, Terraform y CloudFormation, y liderando la integración de nuevas tecnologías mientras aseguraba el cumplimiento de las mejores prácticas de seguridad. Además, aproveché mis amplios conocimientos en redes de AWS para apoyar los requisitos del proyecto.</h4>
+          <ul>
+            <li>Gestioné las cuentas de la empresa en múltiples regiones</li>
+            <li>Proporcioné resolución de incidentes en el rol de SysOps dentro de AWS</li>
+            <li>Administré y brindé soporte a una amplia gama de servicios de AWS.</li>
+          </ul>
+
+          <h3><a href="https://www.softwareone.com/es-es/prensa/2020/11/10/softwareone-adquirio-de-intergrupo" target="_blank">Intergrupo</a> – Analista de Operaciones – Azure L1
+            <span class="xp-dates">(Oct 2018 – Jun 2021)</span>
+          </h3>
+          <h4>Monitoreé e implementé servicios en Azure. Monitoreé servidores en plataformas como PRTG, Solarwinds y Azure, también la capacidad de almacenamiento masivo en RAID, revisión de backups y gestión de incidentes.</h4>
+
+          <h3><a href="https://www.teleperformance.com/en-us/" target="_blank">Teleperformance</a> – Soporte Nivel 1
+            <span class="xp-dates">(Ene 2018 – Oct 2018)</span>
+          </h3>
+          <h4>Brindé soporte técnico en telefonía IP, televisión y fibra óptica para Orange España.</h4>
+
+          <h3><a href="https://www.celerix.com/" target="_blank">Celerix</a> – Analista de Soporte
+            <span class="xp-dates">(Abr 2017 – Oct 2017)</span>
+          </h3>
+          <h4>Participé de proyectos tecnológicos en diseño de red y apertura de locales comerciales, administré cuentas de usuarios en el directorio activo y brindé soporte a las herramientas informáticas de los usuarios como estaciones de trabajo, instalación y mantenimiento preventivo de computadoras.</h4>
+        </section>
+
+        <section>
+          <h2>Idiomas</h2>
+          <p>Inglés – B2 (Intermedio)</p>
+        </section>
+      </div>
+    </template>
+  </main>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
